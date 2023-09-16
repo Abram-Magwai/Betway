@@ -7,7 +7,7 @@ from pyfiglet import figlet_format
 
 logo = figlet_format("Bet", font = "isometric3" )
 
-def fixtures(no_of_games = -1):
+def fixtures(no_of_games):
     url = 'https://www.betway.co.za/sport/soccer'
     response = requests.get(url)
     if response.status_code == 200:
